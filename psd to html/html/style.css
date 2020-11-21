@@ -1,0 +1,1051 @@
+/* ===============================
+common css
+=========================== */
+body{
+    color: #666666;
+    font-family: Georgia, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.alignleft{
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.aligncenter{
+   display: block;
+    margin: 0 auto 15px;
+}
+/* ===============================
+top header  css
+=========================== */
+.header-aria{
+    width: 100%;
+    clear: both;
+}
+
+#top-header-aria{
+    background: #ba2e1f;
+    width: 100%;
+    padding: 13px 0;
+}
+.inner-top-header{
+overflow: hidden;
+}
+.mini-menu{
+    width: 70%;
+    float: left;
+    padding-top:4px;
+}
+.mini-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini-menu ul li{
+    display: inline-block;
+   margin-right: 20px;
+   position: relative;
+}
+.mini-menu ul li::after{
+    background-color: #ffff;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    top: 6px;
+    right: -10px;
+}
+.mini-menu ul li:last-child::after{
+   display: none;
+}
+.mini-menu ul li a{
+     display: block;
+     color: #ffff;
+     font-size: 14px;
+     text-decoration: none;
+}
+.mini-menu ul li a:hover{
+    
+    color: #ddd;
+   
+}
+.search-area{
+    width: 30%;
+    float: right;
+}
+.search-area form{
+    max-width: 210px;
+    width: 96%;
+    float: right;
+    background: #fff;
+    border-radius: 25px;
+    padding: 2%;
+}
+.search-area input{
+    border: 0px solid;
+    width: 75%;
+    padding: 1%;
+    float: left;
+    color: #000;
+}
+.search-area input[type="submit"]{
+    width: 23%;
+    background: url(img/srarch.png);
+    background-repeat: no-repeat;
+    background-position:right ;
+    cursor: pointer;
+}
+ 
+  /* ===============================
+top header  css
+=========================== */
+#main-header-aira{
+    width: 100%;
+    clear: both;
+}
+.inner-header{
+    overflow: hidden;
+    padding: 40px 0;
+}
+.logo-aria{
+    float: left;
+    width: 250px;
+}
+.social_aria{
+    float: right;
+    max-width: 600px;
+    width: 100%;
+    padding-top: 16px;
+}
+.social_aria ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.social_aria ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.social_aria ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_aria ul li a i{
+   width: 35px;
+   height: 25px;
+   background: #333333;
+   border-radius: 50%;
+   display: block;
+   text-decoration: none;
+   padding-top: 8px;
+   text-align: center;
+   color: #fff;
+   transition: 0.5s;
+}
+.social_aria ul li a:hover i{
+    background: #ba2e1f;
+}
+.social_aria ul li a:hover i.fa-linkedin-in{
+    background: #0C72A9;
+}
+
+.social_aria ul li a:hover i.fa-twitter{
+    background: #33ABE2;
+}
+
+.social_aria ul li a:hover i.fa-google-plus-g{
+    background: #CA362E;
+}
+
+.social_aria ul li a:hover i.fa-pinterest{
+    background: #E53E3A;
+}
+.social_aria ul li a:hover i.fa-rss{
+    background: #ee802f;
+    
+}
+
+  /* ===============================
+main menu  css
+=========================== */
+
+#main_menu{
+width: 100%;
+clear: both;
+}
+.inner_menu{
+  background:#333333;
+    min-height: 30px;
+    padding: 15px 0;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+.inner_menu::after{
+    background:#2b2b2b;
+      width: 100%;
+   position: absolute;
+   height:  50%;
+   bottom: 0;
+   left: 0;
+   z-index: -1;
+   content: '';
+   border-radius: 5px;
+   
+  }
+.inner_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+}
+.inner_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+.inner_menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+.inner_menu ul li a:hover{
+    color: #ba2e1f;
+}
+
+.inner_menu ul li:hover a{
+    color: #ba2e1f;
+    
+}
+.inner_menu ul li:hover ul li a{
+    color: #ffffff;
+    
+}
+
+/* dropdown style  */
+#main_menu ul ul{
+    position: absolute;
+    background: #ba2e1f;
+    width: 180px;
+    left: -9000000px;
+    top: 33px;
+}
+#main_menu ul li:hover ul{
+   
+    left:  0px;
+    
+}
+#main_menu ul li:hover ul ul{
+   
+    left:  -99990px;
+    
+}
+#main_menu ul ul ul{
+    position: absolute;
+    background: #ba2e1f;
+    width: 180px;
+    left: -99999px;
+    top: 0px;
+}
+#main_menu ul li  ul li:hover ul{
+   
+    left:  180px;
+    
+}
+#main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+#main_menu ul ul li a:hover{
+    background:#333333;
+    display: block;
+}
+#main_menu ul ul li:hover a{
+    background:#333333;
+    display: block;
+}
+#main_menu ul ul li:hover ul li a{
+    background:none;
+    display: block;
+}
+#main_menu ul ul li ul li a:hover {
+    background:#333333;
+    display: block;
+}
+  /* ===============================
+slider css
+=========================== */
+ #slider_aria{
+     margin-top: 20px;
+ }
+ #slider_aria .item{
+     position: relative;
+ }
+ #slider_aria .slider_caption{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+ }
+ #slider_aria .slider_caption{
+    font-size: 35px;
+    color: #ffff;
+   
+}
+  /* ===============================
+hero aria css
+=========================== */
+#hero_aria{
+background: #ffff;
+margin: 0;padding: 0;
+}
+.inner_hero {
+    overflow: hidden;
+}
+.inner_hero h2{
+    color: #000;
+    line-height: 1.3em;
+    font-size: 86px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.inner_hero p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+.inner_hero a{
+    float: right;
+    color: #ba2e1f;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.inner_hero a:hover{
+    color: #000;
+}
+  /* ===============================
+work aria css
+=========================== */
+ #work_aria{
+background: #f2f2f2;
+padding:45px 0 ;
+}
+.inner_work{
+overflow: hidden;
+ }
+ .child_work{
+    width:31%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.child_work h2{
+    font-size: 26px;
+    color: #333333;
+    font-weight: normal;
+}
+.child_work p{
+    font-size: 14px;
+    color: #878787;
+    line-height: 20px;
+}
+.child_work a{
+    float: right;
+    color: #b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    
+    display: inline-block;
+}
+.child_work a:hover{
+    color: #000;
+}
+
+ .about_aria{
+    margin-left: 0;
+ }
+ .about_aria img{
+    border: 1px solid #dfdfdf;
+    display: block;
+    padding: 5px;
+    margin-bottom: 30px;
+ }
+
+ 
+ .child_service{
+     width: 100%;
+     overflow: hidden;
+     margin-bottom: 20px;
+ }
+ .child_service .service_image{
+ width: 25%;
+ float: left;
+}
+.child_service .service_text{
+ width: 75%;
+ float: right;
+}
+.child_service .service_text h3{
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.child_service .service_text p{
+    margin-top: 0;
+    line-height: 1.4em;
+}
+ .about_testimonial_aria{
+     margin-right: 0;
+ } 
+ .child_testimonial{
+     width: 100%;
+     margin-bottom: 15px;
+     overflow: hidden;
+ }
+ .child_testimonial h3{
+   font-size: 16px;
+   font-weight: bold;
+   color: #989898;
+   background: url(img/work/testimonial1.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 15px 0px 15px 65px;
+ }
+ .child_testimonial h3 span{
+   font-weight: normal;
+ }
+ 
+   /* ===============================
+footer aria css
+=========================== */
+#footer_aria {
+background: #ffff;
+padding: 45px 0;
+}
+.inner_footer{
+   overflow: hidden;
+    
+}
+ .child_footer{
+     padding: 1%;
+     margin:0 1% 10px;
+     width:21%;
+     float: left;
+ }
+ 
+ 
+
+ 
+/* ===============================
+common css
+=========================== */
+body{
+    color: #666666;
+    font-family: Georgia, sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    margin: 0;
+}
+.container{
+    margin: 0 auto;
+    max-width: 960px;
+    width: 96%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.alignleft{
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+.alignright{
+    float: right;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+.aligncenter{
+   display: block;
+    margin: 0 auto 15px;
+}
+/* ===============================
+top header  css
+=========================== */
+.header-aria{
+    width: 100%;
+    clear: both;
+}
+
+#top-header-aria{
+    background: #ba2e1f;
+    width: 100%;
+    padding: 13px 0;
+}
+.inner-top-header{
+overflow: hidden;
+}
+.mini-menu{
+    width: 70%;
+    float: left;
+    padding-top:4px;
+}
+.mini-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+.mini-menu ul li{
+    display: inline-block;
+   margin-right: 20px;
+   position: relative;
+}
+.mini-menu ul li::after{
+    background-color: #ffff;
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 12px;
+    top: 6px;
+    right: -10px;
+}
+.mini-menu ul li:last-child::after{
+   display: none;
+}
+.mini-menu ul li a{
+     display: block;
+     color: #ffff;
+     font-size: 14px;
+     text-decoration: none;
+}
+.mini-menu ul li a:hover{
+    
+    color: #ddd;
+   
+}
+.search-area{
+    width: 30%;
+    float: right;
+}
+.search-area form{
+    max-width: 210px;
+    width: 96%;
+    float: right;
+    background: #fff;
+    border-radius: 25px;
+    padding: 2%;
+}
+.search-area input{
+    border: 0px solid;
+    width: 75%;
+    padding: 1%;
+    float: left;
+    color: #000;
+}
+.search-area input[type="submit"]{
+    width: 23%;
+    background: url(img/srarch.png);
+    background-repeat: no-repeat;
+    background-position:right ;
+    cursor: pointer;
+}
+ 
+  /* ===============================
+top header  css
+=========================== */
+#main-header-aira{
+    width: 100%;
+    clear: both;
+}
+.inner-header{
+    overflow: hidden;
+    padding: 40px 0;
+}
+.logo-aria{
+    float: left;
+    width: 250px;
+}
+.social_aria{
+    float: right;
+    max-width: 600px;
+    width: 100%;
+    padding-top: 16px;
+}
+.social_aria ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: right;
+}
+.social_aria ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.social_aria ul li a{
+    display: block;
+    text-decoration: none;
+}
+.social_aria ul li a i{
+   width: 35px;
+   height: 25px;
+   background: #333333;
+   border-radius: 50%;
+   display: block;
+   text-decoration: none;
+   padding-top: 8px;
+   text-align: center;
+   color: #fff;
+   transition: 0.5s;
+}
+.social_aria ul li a:hover i{
+    background: #ba2e1f;
+}
+.social_aria ul li a:hover i.fa-linkedin-in{
+    background: #0C72A9;
+}
+
+.social_aria ul li a:hover i.fa-twitter{
+    background: #33ABE2;
+}
+
+.social_aria ul li a:hover i.fa-google-plus-g{
+    background: #CA362E;
+}
+
+.social_aria ul li a:hover i.fa-pinterest{
+    background: #E53E3A;
+}
+.social_aria ul li a:hover i.fa-rss{
+    background: #ee802f;
+    
+}
+
+  /* ===============================
+main menu  css
+=========================== */
+
+#main_menu{
+width: 100%;
+clear: both;
+}
+.inner_menu{
+  background:#333333;
+    min-height: 30px;
+    padding: 15px 0;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+.inner_menu::after{
+    background:#2b2b2b;
+      width: 100%;
+   position: absolute;
+   height:  50%;
+   bottom: 0;
+   left: 0;
+   z-index: -1;
+   content: '';
+   border-radius: 5px;
+   
+  }
+.inner_menu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+
+}
+.inner_menu ul li{
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+}
+.inner_menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+}
+.inner_menu ul li a:hover{
+    color: #ba2e1f;
+}
+
+.inner_menu ul li:hover a{
+    color: #ba2e1f;
+    
+}
+.inner_menu ul li:hover ul li a{
+    color: #ffffff;
+    
+}
+
+/* dropdown style  */
+#main_menu ul ul{
+    position: absolute;
+    background: #ba2e1f;
+    width: 180px;
+    left: -9000000px;
+    top: 33px;
+}
+#main_menu ul li:hover ul{
+   
+    left:  0px;
+    
+}
+#main_menu ul li:hover ul ul{
+   
+    left:  -99990px;
+    
+}
+#main_menu ul ul ul{
+    position: absolute;
+    background: #ba2e1f;
+    width: 180px;
+    left: -99999px;
+    top: 0px;
+}
+#main_menu ul li  ul li:hover ul{
+   
+    left:  180px;
+    
+}
+#main_menu ul ul li{
+    margin: 0;
+    display: block;
+}
+#main_menu ul ul li a:hover{
+    background:#333333;
+    display: block;
+}
+#main_menu ul ul li:hover a{
+    background:#333333;
+    display: block;
+}
+#main_menu ul ul li:hover ul li a{
+    background:none;
+    display: block;
+}
+#main_menu ul ul li ul li a:hover {
+    background:#333333;
+    display: block;
+}
+  /* ===============================
+slider css
+=========================== */
+ #slider_aria{
+     margin-top: 20px;
+ }
+ #slider_aria .item{
+     position: relative;
+ }
+ #slider_aria .slider_caption{
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translate(-50%, -50%);
+ }
+ #slider_aria .slider_caption{
+    font-size: 35px;
+    color: #ffff;
+   
+}
+  /* ===============================
+hero aria css
+=========================== */
+#hero_aria{
+background: #ffff;
+margin: 0;padding: 0;
+}
+.inner_hero {
+    overflow: hidden;
+}
+.inner_hero h2{
+    color: #000;
+    line-height: 1.3em;
+    font-size: 86px;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+.inner_hero p{
+    color: #666666;
+    font-size: 16px;
+    font-weight: normal;
+}
+.inner_hero a{
+    float: right;
+    color: #ba2e1f;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.inner_hero a:hover{
+    color: #000;
+}
+  /* ===============================
+work aria css
+=========================== */
+ #work_aria{
+background: #f2f2f2;
+padding:45px 0 ;
+}
+.inner_work{
+overflow: hidden;
+ }
+ .child_work{
+    width:31%;
+    float: left;
+    margin: 0 1% 10px;
+}
+.child_work h2{
+    font-size: 26px;
+    color: #333333;
+    font-weight: normal;
+}
+.child_work p{
+    font-size: 14px;
+    color: #878787;
+    line-height: 20px;
+}
+.child_work a{
+    float: right;
+    color: #b92d1f;
+    font-size: 14px;
+    font-weight: normal;
+    text-decoration: none;
+    clear: both;
+    display: inline-block;
+}
+.child_work a:hover{
+    color: #000;
+}
+
+ .about_aria{
+    margin-left: 0;
+ }
+ .about_aria img{
+    border: 1px solid #dfdfdf;
+    display: block;
+    padding: 5px;
+    margin-bottom: 30px;
+ }
+
+ 
+ .child_service{
+     width: 100%;
+     overflow: hidden;
+     margin-bottom: 20px;
+ }
+ .child_service .service_image{
+ width: 25%;
+ float: left;
+}
+.child_service .service_text{
+ width: 75%;
+ float: right;
+}
+.child_service .service_text h3{
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.child_service .service_text p{
+    margin-top: 0;
+    line-height: 1.4em;
+}
+ .about_testimonial_aria{
+     margin-right: 0;
+ } 
+ .child_testimonial{
+     width: 100%;
+     margin-bottom: 15px;
+     overflow: hidden;
+ }
+ .child_testimonial h3{
+   font-size: 16px;
+   font-weight: bold;
+   color: #989898;
+   background: url(img/work/testimonial1.png);
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 15px 0px 15px 65px;
+ }
+ .child_testimonial h3 span{
+   font-weight: normal;
+ }
+ 
+   /* ===============================
+footer aria css
+=========================== */
+#footer_aria{
+background: #ffff;
+padding: 45px 0;
+}
+.inner_footer{
+   overflow: hidden;
+    
+}
+ .child_footer{
+     padding: 1%;
+     margin:0 1% 10px;
+     width:21%;
+     float: left;
+ }
+ .child_footer h3{
+     color: #666666;
+     font-size: 16px;
+     font-weight: normal;
+     border-top: 1px solid #666666 ;
+     text-transform: uppercase;
+     margin-top: 0;
+     padding-top: 5px;
+ }
+ .child_footer h4{
+    color: #878787;
+    font-size: 14px; 
+    margin-bottom: 5px;
+    margin-top: 0;
+ }
+ .child_footer h4 a{
+    color: #878787;
+    text-decoration: none;
+    float: none;
+ }
+ .child_footer h4 a:hover{
+    color: #ba2e1f;
+     
+    
+ }
+ .child_footer h6{
+     margin: 0 0 10px;
+     font-size: 12px;
+     line-height: 1.3em;
+ }
+ .child_footer p{
+     color: #666666;
+     font-size: 14px;
+    margin-top: 0; 
+ }
+ .child_footer p a{
+     color: #ba2e1f;
+     text-decoration: none;
+ }
+ .child_blog {
+     width: 100%;
+     overflow: hidden;
+   
+ }
+ .child_blog p{
+    line-height: 19px;  
+ }
+ .child_blog  a{
+     color: #ba2e1f;
+     float: right;
+     text-decoration: none;
+ }
+ .child_footer a:hover{
+     color: #666666;
+ }
+ .child_footer ul{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+   
+ }
+ .child_footer ul ul{
+    display: none;
+ }
+ .child_footer  li{
+     background:url(img/footer/text.png) no-repeat center left;
+     padding-bottom: 8px;
+     padding-left: 15px;
+     display: block;
+     border-bottom: 1px solid #666666;
+ }
+ .child_footer li:last-child{
+    border-bottom: 0px solid;
+}
+ .child_footer ul li a{
+    color: #666666;
+    font-size: 14px;
+    text-decoration: none;
+ }
+ .child_footer ul li a:hover{
+     color: #ba2e1f;
+ }
+ 
+ .child_footer input{
+    background: #f2f2f2;
+    border: 0px solid;
+    border-radius: 10px;
+    padding: 10px 5%;
+    width: 90%;
+    margin-bottom: 10px;
+ }
+ 
+ .child_footer textarea{
+  background: #f2f2f2;
+     border: 0px solid;
+     border-radius: 10px;
+     padding: 10px 5%;
+     width: 90%;
+     margin-bottom: 10px;
+ }
+ 
+ .child_footer input[type="submit"]{
+    width: 80px;
+    color: #ba2e1f;
+    cursor: pointer;
+ }
+ 
+ .child_footer input[type="submit"]:hover{
+ background-color: #ba2e1f;
+ color: #fff;
+ }
+  
+   /* ===============================
+copyright aria css
+=========================== */
+#copyright_aria{
+background-color: #f2f2f2;
+padding: 20px 0;
+}
+.inner_copyright{
+overflow: hidden;
+}
+.inner_copyright p{
+margin: 0;
+color: #919191;
+font-size: 12px;
+}
+.left_copyright{
+float: left;
+width: 60%;
+}
+.right_copyright{
+float: right;
+width: 40%;
+text-align: right;
+}
